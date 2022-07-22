@@ -1,0 +1,45 @@
+{
+    "manifestVersion": 1,
+    "id": "18421c9a-0947-11ed-861d-0242ac120002",
+    "name": "SSHWithDiffie-hellman-group1-sha1",
+    "version": "0.0.1",
+    "publisher": "OscarTisnado",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        },
+        {
+            "id": "Microsoft.TeamFoundation.Server.Integration",
+            "version": "[14.0,)"
+        }
+    ],    
+    "description": "Tools for building/releasing with Fabrikam. Includes one build/release task.",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "icons": {
+        "default": "images/extension-icon.png"        
+    },
+    "links": {
+        "getstarted": {
+            "uri": "http://chat.otisnado.com"
+        }
+    },
+    "files": [
+        {
+            "path": "buildandreleasetask"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "d78a5fea-0942-11ed-861d-0242ac120002",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "buildandreleasetask"
+            }
+        }
+    ]
+}
